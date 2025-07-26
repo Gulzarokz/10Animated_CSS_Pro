@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #191825;
+}
+.Button{
+    padding: 12px 36px;
+    border: 2px solid #865dff;
+    text-align: center;
+    color: #865dff;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: aliceblue;
+    text-transform: capitalize;
+    background-color: transparent;
+
+    &:hover{
+    border: 2px solid brown;
+    color: #865dff;
+    animation: shake .4s linear;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+
+}
+
+   
+}
+
+
+@keyframes shake {
+    0%{
+        rotate: 25deg;
+    }
+    50%{
+        rotate: 75deg;
+    }
+    100%{
+        rotate: -25deg;
+    }
+}
